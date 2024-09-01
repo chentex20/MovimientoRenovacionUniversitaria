@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.contacto{
+    background-color: #252A2E;
+    margin: 0 auto;
+    color: #ffffff;
+    height:  100%;
+    min-height:90vh;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    display: grid;
+
+}
+
+.contacto span {
+    color: rgba(0,178,255,1);
+}
+.contacto h1{
+    font-family: "IBM Plex Mono", monospace;
+    text-align: center;
+    font-size: 4em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 30px;
+    
+}
+
+.contacto h3{
+    font-family: "IBM Plex Mono", monospace;
+    text-align: center;
+    font-size: 1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+
+
+.social-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.btn i {
+    font-size: 24px;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.facebook:hover {
+    background-color: #2d4373;
+}
+
+.tiktok {
+    background-color: #000000;
+}
+
+.tiktok:hover {
+    background-color: #333333;
+}
+
+.instagram {
+    background-color: #e1306c;
+}
+
+.instagram:hover {
+    background-color: #bc2a8d;
+}
+
+.whatsapp {
+    background-color: #25D366;
+}
+
+.whatsapp:hover {
+    background-color: #075E54;
+}

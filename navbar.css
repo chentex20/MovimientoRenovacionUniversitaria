@@ -1,0 +1,91 @@
+ 
+    
+    
+.contenedor-header{
+    background: #05b2ea;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+
+.logo img{
+    height: 50px;
+    margin-top:2px ;
+    
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+    
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 1px;
+    transition: .5s;
+    text-decoration: none;
+
+}
+
+.contenedor-header header nav ul li a:hover{
+    color: #fff;
+	margin-top: 0%;
+	text-shadow:
+		0 0 5px rgb(255, 95, 3),
+		0 0 10px rgb(255, 217, 0),
+		0 0 20px rgb(200, 255, 0),
+		0 0 40px rgb(127, 99, 38),
+		0 0 80px rgb(139, 105, 32),
+		0 0 90px rgb(127, 106, 38),
+		0 0 100px rgb(127, 74, 38),
+		0 0 140px rgb(127, 59, 38),
+		0 0 180px rgb(127, 38, 38);
+}
+
+.nav-responsive{
+    background-color: #ffffff;
+    color:#fa7c05 ;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width:899px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 65px;
+        background-color: #05b2ea;
+        width: 230px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #c96b00;
+        padding: 10px 0;
+    }
+}
