@@ -23,13 +23,6 @@ window.onscroll = function(){
     efectoHabilidades();
 } 
 
-//animacion 
-ScrollReveal().reveal('.contenido-home', { delay: 300 });
-ScrollReveal().reveal('.diseño-web', { delay: 400, reset: false });
-ScrollReveal().reveal('.plataforma-streaming', { delay: 400, reset: false });
-ScrollReveal().reveal('.tienda-online', { delay: 400, reset: false });
-ScrollReveal().reveal('.landing-page', { delay: 400, reset: false });
-
 
 //galeria
 function openModal(imageSrc) {
@@ -45,39 +38,3 @@ function openModal(imageSrc) {
      modal.style.display = "none";
  }
 
-
-
-
-
-
-
-
- // Obtener el modal
-var modal = document.getElementById("imageModal");
-
-// Obtener la imagen y el modal para mostrarla
-var modalImg = document.getElementById("modalImg");
-var galleryImages = document.querySelectorAll(".gallery-img");
-
-// Obtener el elemento de cierre
-var closeModal = document.querySelector(".close");
-
-// Agregar evento de clic a cada imagen
-galleryImages.forEach(function(img) {
-    img.addEventListener("click", function() {
-        modal.style.display = "block";
-        modalImg.src = this.src;
-    });
-});
-
-// Cerrar el modal al hacer clic en la "X"
-closeModal.addEventListener("click", function() {
-    modal.style.display = "none";
-});
-
-// Cerrar el modal al hacer clic fuera de la imagen
-modal.addEventListener("click", function(event) {
-    if (event.target === modal) {
-        modal.style.display = "none";
-    }
-});
